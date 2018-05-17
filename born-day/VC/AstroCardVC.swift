@@ -27,6 +27,7 @@ class AstroCardVC: UIViewController {
         _ = AstroCard(from: AstroCard.enFrom.sandipbgt, sign: sign, vc: self)
     }
     
+    /* Function appelée par la class lors d'un thread */
     func callBackLoadAstro(astro: VCard) {
         self.description_first.text = astro._firstDescription
         self.description_sec.text = astro._secondDescription

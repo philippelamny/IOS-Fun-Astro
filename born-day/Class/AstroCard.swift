@@ -25,11 +25,16 @@ class AstroCard {
         
         self._vCard = VCard(_year: yearTmp, _month: monthTmp, _day: dayTmp, _sign: sign, _image: imageTmp, _firstDescription: firstDescriptionTmp, _secondDescription: secondDescriptionTmp, _credit: "")
         
+        /** En fonction du type, gestion du chargement des informations dont on a besoin */
         switch from {
             case .sandipbgt:
+                
+                /** Appel API Web **/
                 let urlToday : String = "http://sandipbgt.com/theastrologer/api/horoscope/%/today"
                 let urlString : String = urlToday.replacingOccurrences(of: "%", with: sign)
                 let requestUrl = URL(string:urlString)
+                
+                /** configuration de la tache a executer dans la thread lors de la recuperation des informations de l'API */
                 let task = URLSession.shared.dataTask(with: requestUrl!) { data, response, error in
                     if error != nil {
                         print ("Some error occured to get information from the website")
@@ -62,6 +67,8 @@ class AstroCard {
                         self._vCard._firstDescription = firstDescriptionTmp
                         self._vCard._secondDescription = secondDescriptionTmp
                         self._vCard._credit = credit
+                        
+                        /** Mise à jour de la vue controller AstroCard avec la thread principal */
                         DispatchQueue.main.async {
                             vc.callBackLoadAstro(astro: self._vCard)
                         }
@@ -77,9 +84,8 @@ class AstroCard {
         }
     }
     
+    /** TODO : Test Unitaire **/
     static func getSignFromDate(month: Int, day: Int) -> String {
-        
-       
         let arSigns = [
             /*0:["sep": 19, "sign": [0:"capricorn", 1:"aquarius"]],
              1:["sep":18, "sign": [0:"aquarius", 1:"pisces"]],
@@ -118,6 +124,7 @@ class AstroCard {
         
     }
     
+/** TODO : Test Unitaire **/
     static func getImgNameOfSign(sign: String) -> String  {
         return sign + ".jpg"
     }

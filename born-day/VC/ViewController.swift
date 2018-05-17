@@ -71,12 +71,15 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
     }
    
+    /* Gestion d'initialisation des variables du controller AstroCardVC */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! AstroCardVC
         destinationVC.month = self.pickerDateBirth.selectedRow(inComponent: 1) + 1
         destinationVC.day = self.pickerDateBirth.selectedRow(inComponent: 2) + 1
     }
 
+    
+    /* function fun pour obtenir le jour de naissance grace au calendrier perpetuel */
     func getDayOfBirthday(_year: Int, _month: Int, _day: Int)-> String {
         
         var jourPerpetuel:[String] = [String](repeating: "", count: 37)

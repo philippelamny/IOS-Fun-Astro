@@ -14,6 +14,7 @@
 		0C321B352014D844005DD676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C321B332014D844005DD676 /* LaunchScreen.storyboard */; };
 		0C321B402014D845005DD676 /* born_dayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C321B3F2014D845005DD676 /* born_dayTests.swift */; };
 		0C321B4B2014D845005DD676 /* born_dayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C321B4A2014D845005DD676 /* born_dayUITests.swift */; };
+		0C7D0BB620AE039400B9B412 /* virgo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C7D0BB520AE039400B9B412 /* virgo.jpg */; };
 		0C80D09C208F12D900ADBA3D /* AstroCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C80D09B208F12D900ADBA3D /* AstroCard.swift */; };
 		0C80D0A0208F162C00ADBA3D /* VCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C80D09F208F162C00ADBA3D /* VCard.swift */; };
 		0CB5D4B920AB5C1900B87E28 /* astro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CB5D4B820AB5C1800B87E28 /* astro.jpg */; };
@@ -62,6 +63,7 @@
 		0C321B462014D845005DD676 /* born-dayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "born-dayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C321B4A2014D845005DD676 /* born_dayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = born_dayUITests.swift; sourceTree = "<group>"; };
 		0C321B4C2014D845005DD676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C7D0BB520AE039400B9B412 /* virgo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = virgo.jpg; path = ../../../../../virgo.jpg; sourceTree = "<group>"; };
 		0C80D09B208F12D900ADBA3D /* AstroCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroCard.swift; sourceTree = "<group>"; };
 		0C80D09F208F162C00ADBA3D /* VCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCard.swift; sourceTree = "<group>"; };
 		0CB5D4B820AB5C1800B87E28 /* astro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = astro.jpg; path = ../../../../../../Downloads/astro.jpg; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				0CB5D4C420AB64FD00B87E28 /* aries.jpg */,
 				0CB5D4BB20AB64FC00B87E28 /* cancer.jpg */,
 				0CB5D4C320AB64FD00B87E28 /* capricorn.jpg */,
+				0C7D0BB520AE039400B9B412 /* virgo.jpg */,
 				0CB5D4C520AB64FD00B87E28 /* gemini.jpg */,
 				0CB5D4BD20AB64FC00B87E28 /* leo.jpg */,
 				0CB5D4C020AB64FC00B87E28 /* libra.jpg */,
@@ -348,6 +351,7 @@
 				0CB5D4C920AB64FD00B87E28 /* leo.jpg in Resources */,
 				0CB5D4C720AB64FD00B87E28 /* cancer.jpg in Resources */,
 				0CB5D4CF20AB64FD00B87E28 /* capricorn.jpg in Resources */,
+				0C7D0BB620AE039400B9B412 /* virgo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
